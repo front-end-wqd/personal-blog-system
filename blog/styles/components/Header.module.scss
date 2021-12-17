@@ -1,0 +1,10 @@
+$primary-color: #1890ff;
+
+.header {
+    background-color: #eee;
+    padding: 8px;
+    span {
+        font-size: 1.5em;
+        color: $primary-color;
+    }
+}
