@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Head from 'next/head'
 import Header from '../components/Header';
+import Author from '../components/Author';
 import { Row, Col, List } from 'antd';
 import { CalendarOutlined, TagOutlined, UserOutlined } from '@ant-design/icons';
 
@@ -74,6 +75,7 @@ export default function Home() {
             )} />
         </Col>
         <Col className="main-right">
+          <Author />
         </Col>
       </Row>
     </div>
