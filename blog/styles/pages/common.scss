@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 .main {
-    display: flex;
+    width: 75%;
+    margin-left: calc((100% - 75%) / 2);
     &-left {
         flex: 3;
         background-color: #f6f6f6;
@@ -46,4 +47,7 @@
 }
 .ant-divider-horizontal.ant-divider-with-text {
     margin: 4px 0;
+}
+.ant-tag-has-color {
+    padding: 2px 8px;
 }

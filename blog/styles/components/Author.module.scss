@@ -10,17 +10,10 @@
     }
     &-tag {
         display: flex;
-        // justify-content: space-evenly;
         flex-wrap: wrap;
         span {
-            min-width: 25%;
-            text-align: center;
-            margin: 4px 4px 0 0;
-        }
-    }
-    &-link {
-        span {
-            margin: 2px;
+            margin: 8px 8px 0 0;
+            padding: 2px 8px;
         }
     }
 }
