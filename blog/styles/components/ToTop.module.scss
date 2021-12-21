@@ -1,0 +1,15 @@
+.to-top {
+    width: 40px;
+    height: 40px;
+    color: #1890ff;
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10vh;
+    right: 16px;
+    border: 2px solid #1890ff;
+    cursor: pointer;
+}

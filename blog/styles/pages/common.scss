@@ -16,6 +16,10 @@
         background-color: #f6f6f6;
         margin: 8px 8px 0 0;
         padding: 8px;
+        > div {
+            position: sticky;
+            top: 8px;
+        }
     }
     .article-title {
         color: #1890ff;
