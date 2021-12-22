@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/components/Header.module.scss';
 import { TrophyTwoTone } from '@ant-design/icons';
 
-const Header = () => {
+const Wqd_Header = () => {
     return (
         <div className={styles.header}>
             <div className={styles["header-name"]}>
@@ -13,4 +13,4 @@ const Header = () => {
     );
 }
 
-export default Header;
+export default Wqd_Header;

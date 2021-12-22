@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../styles/components/ToTop.module.scss';
 import { CaretUpOutlined } from '@ant-design/icons';
 
-const ScrollToTop = () => {
+const Wqd_ScrollToTop = () => {
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -17,4 +17,4 @@ const ScrollToTop = () => {
     );
 }
 
-export default ScrollToTop;
+export default Wqd_ScrollToTop;

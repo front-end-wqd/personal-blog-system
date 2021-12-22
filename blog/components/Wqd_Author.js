@@ -3,11 +3,11 @@ import styles from '../styles/components/Author.module.scss';
 import { Avatar, Divider, Tag } from 'antd';
 import { CodepenOutlined, CodeOutlined } from '@ant-design/icons';
 
-const Author = () => {
+const Wqd_Author = () => {
     useEffect(() => {
         let author = document.querySelector("#author");
         author.style.top = window.menuOffsetHeight + 8 + "px";
-      }, []);
+    }, []);
 
     return (
         <div id="author" className={styles.author}>
@@ -38,4 +38,4 @@ const Author = () => {
     );
 }
 
-export default Author;
+export default Wqd_Author;
