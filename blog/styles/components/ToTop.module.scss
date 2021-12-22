@@ -1,7 +1,6 @@
 .to-top {
     width: 40px;
     height: 40px;
-    color: #1890ff;
     font-size: 1.25em;
     display: flex;
     align-items: center;
@@ -10,6 +9,8 @@
     position: fixed;
     bottom: 10vh;
     right: calc(((100% - 75%) / 2 + 8px) / 2 - 40px / 2);
-    border: 2px solid #1890ff;
+    // border: 2px solid #1890ff;
+    background-color: #1890ff;
+    color: white;
     cursor: pointer;
 }

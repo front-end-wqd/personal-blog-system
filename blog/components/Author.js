@@ -7,7 +7,7 @@ const Author = () => {
     return (
         <div className={styles.author}>
             <div className={styles['author-avatar']}>
-                <Avatar size={64} src="\cute.jpeg"></Avatar>
+                <Avatar size={80} src="\cute.jpeg"></Avatar>
             </div>
             <div className={styles['author-tag']}>
                 <Tag color="magenta">wqd</Tag>

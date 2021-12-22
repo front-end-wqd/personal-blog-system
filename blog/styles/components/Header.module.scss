@@ -1,3 +1,4 @@
+@import url('https://fonts.font.im/css?family=Graduate');
 $primary-color: #42b983;
 
 .header {
@@ -8,9 +9,18 @@ $primary-color: #42b983;
         color: $primary-color;
         display: flex;
         align-items: center;
+        margin-bottom: 8px;
+        padding: 8px 0;
         &-text {
             margin-left: 8px;
             font-weight: 500;
+        }
+    }
+    &-menu {
+        font-family: 'Graduate', sans-serif;
+        &-item {
+            color: $primary-color;
+            font-size: 1.25em;
         }
     }
 }
