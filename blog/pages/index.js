@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head'
 import Header from '../components/Header';
+import Menu from '../components/Menu';
 import Author from '../components/Author';
 import ToTop from '../components/ScrollToTop';
 import { Row, Col, List } from 'antd';
@@ -58,6 +59,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <Menu />
       <Row className="main">
         <Col className="main-left">
           <List

@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from '../styles/components/Author.module.scss';
 import { Avatar, Divider, Tag } from 'antd';
 import { CodepenOutlined, CodeOutlined } from '@ant-design/icons';
 
 const Author = () => {
+    useEffect(() => {
+        let author = document.querySelector("#author");
+        author.style.top = window.menuOffsetHeight + 8 + "px";
+      }, []);
+
     return (
-        <div className={styles.author}>
+        <div id="author" className={styles.author}>
             <div className={styles['author-avatar']}>
                 <Avatar size={80} src="\cute.jpeg"></Avatar>
             </div>

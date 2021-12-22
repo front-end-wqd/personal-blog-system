@@ -19,7 +19,6 @@
         padding: 8px;
         > div {
             position: sticky;
-            top: 8px;
         }
     }
     .article-title {
@@ -50,4 +49,5 @@
 }
 .ant-tag-has-color {
     padding: 2px 8px;
+    margin: 0 8px 8px 0;
 }
