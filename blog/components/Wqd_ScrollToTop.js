@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/components/ToTop.module.scss';
+import styles from '../styles/components/ScrollToTop.module.scss';
 import { CaretUpOutlined } from '@ant-design/icons';
 
 const Wqd_ScrollToTop = () => {

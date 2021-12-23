@@ -30,7 +30,7 @@ const Wqd_List = () => {
     return (
         <div className={styles.list}>
             <List
-                header={<div style={{fontWeight: 500, fontSize: 'calc(1em + 1em / 8)'}}>最新文章</div>}
+                header={<div style={{fontWeight: 500, fontSize: 'calc(1em + 1em / 4)'}}>最新文章</div>}
                 dataSource={list}
                 renderItem={item => (
                     <List.Item>
