@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from '../styles/components/Menu.module.scss';
 import { Menu } from 'antd';
 
-const Wqd_Menu = () => {
+const Wqd_Menu = (props) => {
     const [activeKey, setActiveKey] = useState("");
 
     // 计算menu高度
@@ -11,18 +11,22 @@ const Wqd_Menu = () => {
         window.menuOffsetHeight = menu.offsetHeight;
     }, []);
 
-    // 设置menu激活的item
+    // 设置menu当前选中项
     useEffect(() => {
-        // todo
-    }, []);
+    setActiveKey(props.activeKey);
+    }, [props]);
 
     const toPage = (e) => {
         switch(e.key) {
             case "css":
-                window.location.href = "/css-page";
+                if (window.location.pathname !== "/css-page") {
+                    window.location.href = "/css-page";
+                }
                 break;
             case "js":
-                window.location.href = "/js-page";
+                if (window.location.pathname !== "/js-page") {
+                    window.location.href = "/js-page";
+                }
                 break;
         }
     }

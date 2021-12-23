@@ -4,7 +4,9 @@ import { TrophyTwoTone } from '@ant-design/icons';
 
 const Wqd_Header = () => {
     const toHome = () => {
-        window.location.href = "/";
+        if (window.location.pathname !== "/") {
+            window.location.href = "/";
+        }
     }
 
     return (
