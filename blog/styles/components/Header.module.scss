@@ -1,9 +1,10 @@
 $primary-color: #42b983;
 
 .header {
-    background-color: #f6f6f6;
-    padding: 8px 8px 0;
+    padding: 0 8px 0;
+    display: inline-block;
     &-name {
+        cursor: pointer;
         font-size: 1.25em;
         color: $primary-color;
         display: flex;

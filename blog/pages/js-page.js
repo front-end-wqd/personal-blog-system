@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Wqd_Header />
-      <Wqd_Menu activeKey="" />
+      <Wqd_Menu activeKey="js" />
       <Row className="main">
         <Col className="main-left">
           <Wqd_List />
