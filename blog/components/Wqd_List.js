@@ -25,7 +25,23 @@ const Wqd_List = () => {
             title: '你不知道的css',
             description: '你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的'
         },
+        {
+            title: '你不知道的css',
+            description: '你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的'
+        },
+        {
+            title: '你不知道的css',
+            description: '你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的'
+        },
+        {
+            title: '你不知道的css',
+            description: '你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的你不知道的'
+        },
     ]);
+
+    const toDetail = () => {
+        window.location.href = "/article-detail";
+    }
 
     return (
         <div className={styles.list}>
@@ -34,7 +50,7 @@ const Wqd_List = () => {
                 dataSource={list}
                 renderItem={item => (
                     <List.Item>
-                        <div className={styles["article-title"]}>{item.title}</div>
+                        <div onClick={toDetail} className={styles["article-title"]}>{item.title}</div>
                         <div className={styles["article-information"]}>
                             <span><CalendarOutlined style={{marginRight: 2}} />2021-12-20</span>
                             <span><TagOutlined style={{marginRight: 2}} />css</span>

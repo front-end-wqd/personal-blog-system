@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head'
 import Wqd_Header from '../components/Wqd_Header';
 import Wqd_Menu from '../components/Wqd_Menu';
@@ -9,6 +9,9 @@ import MarkdownNavbar from 'markdown-navbar';
 import 'markdown-navbar/dist/navbar.css';
 
 export default function ArticleDetail() {
+  const [offsetTop, setOffsetTop] = useState(0);
+  const [headerHeight, setHeaderHeight] = useState(0);
+
   const md = `## a\n` +
   `## b\n` +
   `## c\n` +
@@ -36,6 +39,11 @@ export default function ArticleDetail() {
   `## y\n` +
   `## z\n`;
 
+  useEffect(() => {
+    setOffsetTop(window.menuOffsetHeight + 8);
+    setHeaderHeight(window.headerOffsetHeight);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -60,9 +68,9 @@ export default function ArticleDetail() {
           </div>
         </Col>
         <Col className="main-right">
-          <Affix offsetTop={window.menuOffsetHeight + 8}>
+          <Affix offsetTop={offsetTop}>
             <div className="article-navbar">
-            <MarkdownNavbar headingTopOffset={0} source={md} ordered={false} />
+            <MarkdownNavbar headingTopOffset={-headerHeight} ordered={false} source={md} />
           </div>
           </Affix>
         </Col>
