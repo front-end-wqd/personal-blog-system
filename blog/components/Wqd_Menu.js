@@ -16,24 +16,13 @@ const Wqd_Menu = (props) => {
     setActiveKey(props.activeKey);
     }, [props]);
 
-    const toPage = (e) => {
-        switch(e.key) {
-            case "css":
-                if (window.location.pathname !== "/css-page") {
-                    window.location.href = "/css-page";
-                }
-                break;
-            case "js":
-                if (window.location.pathname !== "/js-page") {
-                    window.location.href = "/js-page";
-                }
-                break;
-        }
+    const toList = (e) => {
+        window.location.href = `/list-page?type=${e.key}`;
     }
 
     return (
         <div id="menu" className={styles["menu"]}>
-            <Menu mode="horizontal" onClick={toPage} selectedKeys={activeKey}>
+            <Menu mode="horizontal" onClick={toList} selectedKeys={activeKey}>
                 <Menu.Item key="css">
                     welcome to <span className={styles["menu-item"]}>css</span>
                 </Menu.Item>

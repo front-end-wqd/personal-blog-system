@@ -11,6 +11,22 @@
         background-color: #f6f6f6;
         margin: 8px 8px 0 8px;
         padding: 8px;
+        .article {
+            .article-title {
+                color: #1890ff;
+                font-weight: 500;
+                font-size: calc(1em + 1em / 2);
+                text-align: center;
+            }
+            .article-information {
+                padding: 4px;
+                text-align: center;
+                color: #00000040;
+                * + * {
+                    margin-left: 8px;
+                }
+            }
+        }
     }
     &-right {
         flex: 1;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head'
 import Wqd_Header from '../components/Wqd_Header';
 import Wqd_Menu from '../components/Wqd_Menu';
@@ -7,7 +7,16 @@ import Wqd_Author from '../components/Wqd_Author';
 import Wqd_ScrollToTop from '../components/Wqd_ScrollToTop';
 import { Row, Col } from 'antd';
 
-export default function Home() {
+export default function ListPage() {
+  const [type, setType] = useState("");
+
+  useEffect(() => {
+    // 去除头部的问号
+    let str = location.search.slice(1);
+    let arr = str.split("&");
+    setType(arr[0].split("=")[1]);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -16,7 +25,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Wqd_Header />
-      <Wqd_Menu activeKey="css" />
+      <Wqd_Menu activeKey={type} />
       <Row className="main">
         <Col className="main-left">
           <Wqd_List />

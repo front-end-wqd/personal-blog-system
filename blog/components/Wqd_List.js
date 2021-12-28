@@ -36,9 +36,9 @@ const Wqd_List = () => {
                     <List.Item>
                         <div className={styles["article-title"]}>{item.title}</div>
                         <div className={styles["article-information"]}>
-                        <span><CalendarOutlined style={{marginRight: 2}} />2021-12-20</span>
-                        <span><TagOutlined style={{marginRight: 2}} />css</span>
-                        <span><UserOutlined style={{marginRight: 2}} />123</span>
+                            <span><CalendarOutlined style={{marginRight: 2}} />2021-12-20</span>
+                            <span><TagOutlined style={{marginRight: 2}} />css</span>
+                            <span><UserOutlined style={{marginRight: 2}} />123</span>
                         </div>
                         <div>{item.description}</div>
                     </List.Item>
