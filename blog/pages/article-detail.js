@@ -70,8 +70,8 @@ export default function ArticleDetail() {
         <Col className="main-right">
           <Affix offsetTop={offsetTop}>
             <div className="article-navbar">
-            <MarkdownNavbar headingTopOffset={-headerHeight} ordered={false} source={md} />
-          </div>
+              <MarkdownNavbar headingTopOffset={-headerHeight} ordered={false} source={md} />
+            </div>
           </Affix>
         </Col>
       </Row>
