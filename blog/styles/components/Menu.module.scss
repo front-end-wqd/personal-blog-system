@@ -1,5 +1,4 @@
 @import url('https://fonts.font.im/css?family=Graduate');
-$primary-color: #42b983;
 
 .menu {
     background: linear-gradient(to right, hsl(209, 100.0%, 84.7%), hsl(153, 47.4%, 79.2%));
@@ -9,7 +8,7 @@ $primary-color: #42b983;
     padding: 8px;
     font-family: 'Graduate', sans-serif;
     &-item {
-        color: $primary-color;
+        color: #42b983;
         font-size: 1.25em;
     }
 }

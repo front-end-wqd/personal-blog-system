@@ -13,7 +13,7 @@ const Wqd_Menu = (props) => {
 
     // 设置menu当前选中项
     useEffect(() => {
-    setActiveKey(props.activeKey);
+        setActiveKey(props.activeKey);
     }, [props]);
 
     const toList = (e) => {
